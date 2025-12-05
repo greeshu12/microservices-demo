@@ -5,7 +5,6 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo "Running build for Service A"
                 myBuild()
             }
         }
@@ -19,7 +18,7 @@ pipeline {
 
     post {
         always {
-            myNotify("Service A pipeline completed")
+            myNotify("Service1 pipeline completed")
         }
     }
 }
